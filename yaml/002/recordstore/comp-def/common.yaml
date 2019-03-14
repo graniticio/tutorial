@@ -1,0 +1,12 @@
+packages:
+  - "github.com/graniticio/granitic/v2/ws/handler"
+  - "recordstore/artist"
+
+components:
+
+  artistHandler:
+    type: handler.WsHandler
+    HTTPMethod: GET,
+    Logic:
+      type: artist.GetLogic
+    PathPattern: "^/artist"

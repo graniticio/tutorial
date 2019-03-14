@@ -1,0 +1,13 @@
+github.com/graniticio/granitic-yaml/v2 v2.0.0-pre2 h1:FFTpbRJZRPrSX84JUoWcJo3LPnttuJPCvaDN0lo/pZE=
+github.com/graniticio/granitic-yaml/v2 v2.0.0-pre2/go.mod h1:HpWGyYmzaa9R7E8cGWYWNdXUabWYwgGxwrgLPRvviwQ=
+github.com/graniticio/granitic-yaml/v2 v2.0.0-pre3 h1:N5YE0TRHxGGBsuBOkTgmoPTSyKvzYAQeuhVMKxgAby4=
+github.com/graniticio/granitic-yaml/v2 v2.0.0-pre3/go.mod h1:6duOjt900sbTFkm8rpuEtjN4Jua5fBZpTw1bMzuvVI8=
+github.com/graniticio/granitic/v2 v2.0.0-pre1 h1:6UuwIftHn7g2k84hk8D6RGKboI4ciprk95FbKi93qp0=
+github.com/graniticio/granitic/v2 v2.0.0-pre1/go.mod h1:eX2bLqj4d6rYNVb0pC0Gk1f6vAC8QFbcI3INetQMBnk=
+github.com/graniticio/granitic/v2 v2.0.0-pre5 h1:dkH/Kcf/q2yKvpcAmTcKFBKraqJqzyU/73JLAGjThP4=
+github.com/graniticio/granitic/v2 v2.0.0-pre5/go.mod h1:eX2bLqj4d6rYNVb0pC0Gk1f6vAC8QFbcI3INetQMBnk=
+github.com/graniticio/granitic/v2 v2.0.0-pre6 h1:k9SYUQXSf7RZyxvbu+2VDSlt/vBmdapawSuhZXEngUk=
+github.com/graniticio/granitic/v2 v2.0.0-pre6/go.mod h1:eX2bLqj4d6rYNVb0pC0Gk1f6vAC8QFbcI3INetQMBnk=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.2.2 h1:ZCJp+EgiOT7lHqUV2J862kp8Qj64Jo6az82+3Td9dZw=
+gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
