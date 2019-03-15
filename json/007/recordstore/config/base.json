@@ -3,7 +3,9 @@
     "HTTPServer": true,
     "JSONWs": true,
     "RuntimeCtl": true,
-    "ServiceErrorManager": true
+    "ServiceErrorManager": true,
+    "QueryManager": true,
+    "RdbmsAccess": true
   },
 
   "ApplicationLogger":{
@@ -24,5 +26,16 @@
     ["C", "NAME_BAD_LENGTH", "Names must be 5-50 characters in length."],
     ["C", "NAME_BAD_CONTENT", "Names can only contain letters and spaces."],
     ["C", "FIRST_ACTIVE_INVALID", "FirstYearActive must be in the range 1700-2100"]
-  ]
+  ],
+
+  "QueryManager": {
+    "ProcessorName": "sql"
+  },
+
+  "FrameworkLogger": {
+    "GlobalLogLevel": "INFO",
+    "ComponentLogLevels": {
+      "grncQueryManager": "DEBUG"
+    }
+  }
 }

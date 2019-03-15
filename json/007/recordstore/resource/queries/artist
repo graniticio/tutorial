@@ -1,0 +1,8 @@
+ID:ARTIST_BY_ID
+
+SELECT
+  name AS Name
+FROM
+  artist
+WHERE
+  id = ${ID}
