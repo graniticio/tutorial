@@ -7,7 +7,7 @@
   },
 
   "ApplicationLogger":{
-    "GlobalLogLevel": "DEBUG",
+    "GlobalLogLevel": "INFO",
     "ComponentLogLevels": {
       "artistHandlerLogic": "TRACE"
     }
@@ -15,7 +15,7 @@
 
   "submitArtistRules": [
     ["Name",  "STR",  "REQ:NAME_MISSING", "TRIM", "LEN:5-50:NAME_BAD_LENGTH", "BREAK", "REG:^[A-Z]| +$:NAME_BAD_CONTENT"],
-    ["FirstYearActive",   "INT",  "RANGE:0|150:FIRST_ACTIVE_INVALID"]
+    ["FirstYearActive",   "INT",  "RANGE:1700|2100:FIRST_ACTIVE_INVALID"]
   ],
 
   "serviceErrors": [

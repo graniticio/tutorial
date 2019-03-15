@@ -23,5 +23,5 @@ type Submission struct {
 }
 
 type CreatedResource struct {
-	ID int
+	ID int64
 }
