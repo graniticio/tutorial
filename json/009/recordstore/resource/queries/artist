@@ -1,0 +1,38 @@
+ID:ARTIST_BY_ID
+
+SELECT
+  name AS Name
+FROM
+  artist
+WHERE
+  id = ${ID}
+
+ID:CREATE_ARTIST
+
+INSERT INTO artist(
+  name,
+  first_active
+) VALUES (
+  ${!Name},
+  ${FirstYearActive}
+)
+
+ID:RELATE_ARTIST
+
+INSERT INTO related_artist(
+  artist_id,
+  related_artist_id
+) VALUES (
+  ${!ArtistID},
+  ${!RelatedArtistID}
+)
+
+
+ID:CHECK_ARTIST
+
+SELECT
+    COUNT(id)
+FROM
+    artist
+WHERE
+    id = ${ID}
