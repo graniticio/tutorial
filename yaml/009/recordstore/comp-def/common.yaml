@@ -1,0 +1,51 @@
+packages:
+  - github.com/graniticio/granitic/v2/ws/handler
+  - github.com/graniticio/granitic/v2/validate
+  - recordstore/artist
+  - recordstore/db
+  - github.com/go-sql-driver/mysql
+
+components:
+
+  artistHandler:
+    type: handler.WsHandler
+    HTTPMethod: GET
+    Logic:
+      type: artist.GetLogic
+      EnvLabel: $environment.label(DEV)
+    PathPattern: "^/artist/([\\d]+)[/]?$"
+    BindPathParams:
+      - ID
+    FieldQueryParam:
+      NormaliseName: normalise
+
+  submitArtistHandler:
+    type: handler.WsHandler
+    HTTPMethod: POST
+    PathPattern: "^/artist[/]?$"
+    Logic:
+      type: artist.PostLogic
+    AutoValidator: +submitArtistValidator
+
+  submitArtistValidator:
+    type: validate.RuleValidator
+    DefaultErrorCode: INVALID_ARTIST
+    Rules: $submitArtistRules
+    RuleManager: +sharedRuleManager
+
+  dbProvider:
+    type: db.MySQLProvider
+    Config:
+      type: mysql.Config
+      User: grnc
+      Passwd: OKnasd8!k
+      Addr: localhost
+      DBName: recordstore
+      AllowNativePasswords: true
+
+  sharedRuleManager:
+    type: validate.UnparsedRuleManager
+    Rules: $sharedRules
+
+  artistExistsChecker:
+    type: db.ArtistExistsChecker
