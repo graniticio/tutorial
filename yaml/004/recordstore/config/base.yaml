@@ -1,0 +1,10 @@
+Facilities:
+  HTTPServer: true
+  JSONWs: true
+  RuntimeCtl: true
+
+ApplicationLogger:
+  GlobalLogLevel: ERROR
+  ComponentLogLevels:
+    artistHandlerLogic: TRACE
+

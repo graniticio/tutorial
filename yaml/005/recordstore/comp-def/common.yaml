@@ -1,0 +1,23 @@
+packages:
+  - github.com/graniticio/granitic/v2/ws/handler
+  - recordstore/artist
+
+components:
+  artistHandler:
+    type: handler.WsHandler
+    HTTPMethod: GET
+    Logic:
+      type: artist.GetLogic
+      EnvLabel: $environment.label(DEV)
+    PathPattern: "^/artist/([\\d]+)[/]?$"
+    BindPathParams:
+      - ID
+    FieldQueryParam:
+      NormaliseName: normalise
+
+  submitArtistHandler:
+    type: handler.WsHandler
+    HTTPMethod: POST
+    PathPattern: "^/artist[/]?$"
+    Logic:
+      type: artist.PostLogic

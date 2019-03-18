@@ -1,0 +1,11 @@
+github.com/graniticio/granitic-yaml/v2 v2.0.0-pre7 h1:phDMl6xfuE7rWvutzlMcwAts6wjbprdsQfEh3mHXiTU=
+github.com/graniticio/granitic-yaml/v2 v2.0.0-pre7/go.mod h1:ufaCtkG3AOi4GzjGj5AogjF3Eia2rgmNl3YQrWDoZ+c=
+github.com/graniticio/granitic/v2 v2.0.0-pre5 h1:dkH/Kcf/q2yKvpcAmTcKFBKraqJqzyU/73JLAGjThP4=
+github.com/graniticio/granitic/v2 v2.0.0-pre5/go.mod h1:eX2bLqj4d6rYNVb0pC0Gk1f6vAC8QFbcI3INetQMBnk=
+github.com/graniticio/granitic/v2 v2.0.0-pre6 h1:k9SYUQXSf7RZyxvbu+2VDSlt/vBmdapawSuhZXEngUk=
+github.com/graniticio/granitic/v2 v2.0.0-pre6/go.mod h1:eX2bLqj4d6rYNVb0pC0Gk1f6vAC8QFbcI3INetQMBnk=
+github.com/graniticio/granitic/v2 v2.0.0-pre7 h1:ISUXFxl77FYCz2xfpWZqMs9N6hikgWu2lO3Og9NRP48=
+github.com/graniticio/granitic/v2 v2.0.0-pre7/go.mod h1:eX2bLqj4d6rYNVb0pC0Gk1f6vAC8QFbcI3INetQMBnk=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.2.2 h1:ZCJp+EgiOT7lHqUV2J862kp8Qj64Jo6az82+3Td9dZw=
+gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
