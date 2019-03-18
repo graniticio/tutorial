@@ -10,7 +10,6 @@ components:
     Logic:
       type: artist.GetLogic
       EnvLabel: conf:environment.label(DEV)
-
     PathPattern: ^/artist
 
   

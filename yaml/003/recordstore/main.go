@@ -1,8 +1,10 @@
 package main
 
-import "github.com/graniticio/granitic/v2"
-import "recordstore/bindings"
+import (
+	gy "github.com/graniticio/granitic-yaml/v2"
+	"recordstore/bindings"
+)
 
 func main() {
-	granitic.StartGranitic(bindings.Components())
+	gy.StartGraniticWithYaml(bindings.Components())
 }
