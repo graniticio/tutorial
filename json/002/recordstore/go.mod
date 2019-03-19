@@ -1,3 +1,3 @@
 module recordstore
 
-require github.com/graniticio/granitic/v2 v2.0.0-pre5
+require github.com/graniticio/granitic/v2 v2.0
