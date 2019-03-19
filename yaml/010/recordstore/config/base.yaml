@@ -1,0 +1,38 @@
+Facilities:
+  HTTPServer: true
+  JSONWs: true
+  RuntimeCtl: true
+  ServiceErrorManager: true
+  QueryManager: true
+  RdbmsAccess: true
+
+ApplicationLogger:
+  GlobalLogLevel: INFO
+  ComponentLogLevels:
+    artistHandlerLogic: TRACE
+
+QueryManager:
+  ProcessorName: sql
+
+FrameworkLogger:
+  GlobalLogLevel: INFO
+  ComponentLogLevels:
+    grncQueryManager: DEBUG
+
+sharedRules:
+  artistExistsRule: ["INT", "EXT:artistExistsChecker"]
+
+
+submitArtistRules:
+  - ["Name",             "STR",  "REQ:NAME_MISSING", "TRIM", "STOPALL", "LEN:5-50:NAME_BAD_LENGTH", "BREAK", "REG:^[A-Z]| +$:NAME_BAD_CONTENT"]
+  - ["FirstYearActive",  "INT",  "RANGE:1700|2100:FIRST_ACTIVE_INVALID"]
+  - ["RelatedArtists", "SLICE",  "ELEM:artistExistsRule:NO_SUCH_RELATED"]
+
+serviceErrors:
+  - ["C", "INVALID_ARTIST", "Cannot create an artist with the information provided."]
+  - ["C", "NAME_MISSING", "You must supply the Name field on your submission."]
+  - ["C", "NAME_BAD_LENGTH", "Names must be 5-50 characters in length."]
+  - ["C", "NAME_BAD_CONTENT", "Names can only contain letters and spaces."]
+  - ["C", "FIRST_ACTIVE_INVALID", "FirstYearActive must be in the range 1700-2100"]
+  - ["C", "NO_SUCH_RELATED", "Related artist does not exist"]
+  - ["U", "DATABASE_UNEXPECTED", "Unexpected problem communicating with the database"]
