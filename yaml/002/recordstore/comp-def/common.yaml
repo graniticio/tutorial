@@ -6,7 +6,7 @@ components:
 
   artistHandler:
     type: handler.WsHandler
-    HTTPMethod: GET,
+    HTTPMethod: GET
     Logic:
       type: artist.GetLogic
     PathPattern: "^/artist"
